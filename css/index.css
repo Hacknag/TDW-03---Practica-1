@@ -1,0 +1,579 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 10000;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 10px;
+    transition: all 0.3s linear;
+}
+
+.navbar-brand img {
+    width: 127px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Indicamos que cuando se haga scroll cambie de color el icono menu hamburguesa */
+.navigation-wrap.scroll-on .navbar-toggler i {
+    color: #000;
+}
+
+.navbar-toggler i {
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
+
+/* Quitamos estilos que trae por defecto al presionar el menu hamburguesa */
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.nav-link {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #bd262a;
+}
+
+/* cuando esta responsivo, se despliegan las opciones y las centramos */
+.navbar-collapse {
+    text-align: center;
+}
+
+.navigation-wrap.scroll-on {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 28px 0 rgb(0, 0, 0, 0.09);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+.navigation-wrap.scroll-on .nav-link {
+    color: #000;
+}
+
+.navigation-wrap.scroll-on .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link.active {
+    color: #bd262a;
+}
+
+.btnOrder {
+    padding: 20px;
+    background-color: #bd262a;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.sectionOne {
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.9);
+    padding: 170px 0;
+}
+
+.sectionOne h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.sectionOne span {
+    color: #bd262a;
+}
+
+.sectionOne p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.sectionOne img {
+    width: 530px;
+    margin: 0 75px;
+    animation: foodImgRotate 50s linear infinite;
+}
+
+.sectionTwo h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #bd262a;
+    font-size: 45px;
+}
+
+.sectionTwo p {
+    white-space: pre-line;
+    line-height: 28px;
+    color: #000;
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+
+.sectionTwo i {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #bd262a;
+    color: #fff;
+    line-height: 100px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.sectionTwo h3 {
+    padding-bottom: 15px;
+}
+
+.sectionThree {
+    background-color: #f7f7f7;
+}
+
+.sectionThree h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #bd262a;
+    font-size: 45px;
+}
+
+.sectionThree p {
+    color: #000;
+    white-space: pre-line;
+    line-height: 28px;
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+
+.card-title {
+    color: #bd262a;
+    font-weight: bold;
+}
+
+.sectionThree .list-group-item {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sectionFour h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #bd262a;
+    font-size: 45px;
+}
+
+.sectionFour .pSectionFour {
+    color: #000;
+    white-space: pre-line;
+    line-height: 28px;
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+
+.sectionFour .list-group-item i {
+    font-size: 40px;
+    color: #bd262a;
+}
+
+.sm-view {
+    display: none;
+}
+
+.sectionApp {
+    background-color: #f7f7f7;
+}
+
+.divImg img {
+    max-width: 350px;
+    width: 100%;
+}
+
+.sectionApp h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #bd262a;
+    font-size: 45px;
+}
+
+.sectionApp p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0px 0px 15px;
+    font-weight: 300;
+}
+
+.boxInformativo {
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.boxInformativo h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.313rem;
+}
+
+.boxInformativo.estilo1 {
+    background-color: #bd262a;
+}
+
+.boxInformativo.estilo2 {
+    background-color: #f07114;
+}
+
+.boxInformativo.estilo3 {
+    background-color: #f07114;
+}
+
+.boxInformativo.estilo4 {
+    background-color: #bd262a;
+}
+
+.boxInformativo span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.sectionFive h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #bd262a;
+    font-size: 45px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 25px;
+}
+
+.contact-form .form-control {
+    height: 52px;
+    border: 1px solid transparent;
+    box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 10%);
+    border-radius: 5px;
+    padding: 0 24px;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.contact-form textarea.form-control {
+    height: 200px;
+    padding-top: 12px;
+    resize: none;
+}
+
+.contact-form .form-control:focus {
+    border-color: #bd262a;
+}
+
+.botonScrollTop {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: #bd262a;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #bd262a;
+}
+
+footer p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+@keyframes foodImgRotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 
+    Dispositivo = Dispositivos con muy baja resolución (Pequeños)
+    Por lo general se usa y se puede observar con la extensión "simulador móvil" y en tiempo real
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .navbar-nav {
+        background-color: #fff;
+    }
+
+    .nav-link {
+        color: #000;
+    }
+
+    .sectionOne h1,
+    .sectionTwo h2,
+    .sectionThree h2,
+    .sectionFour h2,
+    .sectionFive h2 {
+        font-size: 37px;
+    }
+
+    .sectionOne img {
+        width: 220px;
+        padding-top: 45px;
+        animation: foodImgRotate 50s linear infinite;
+        align-self: center;
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    .sectionTwo i {
+        background-color: #bd5d26;
+        color: #000;
+    }
+
+    .sectionTwo p {
+        text-align: justify;
+    }
+
+    .boxInformativo.estilo1 {
+        background-color: #26bd42;
+    }
+
+    .boxInformativo.estilo2 {
+        background-color: #520ad7;
+    }
+
+    .boxInformativo.estilo3 {
+        background-color: #000000;
+    }
+
+    .boxInformativo.estilo4 {
+        background-color: #bd9526;
+    }
+
+    .div-btnOrder {
+        text-align: start;
+    }
+
+    .lg-view {
+        display: none;
+    }
+
+    .sm-view {
+        display: inline-block;
+    }
+
+    .sectionFour .list-group-item i {
+        font-size: 40px;
+        color: #26bd49;
+    }
+
+    .i-price {
+        background-color: #bd5d26;
+        color: #fff;
+    }
+}
+
+/* 
+    Dispositivo = Tablets con baja resolución(Tablets antiguas), móviles
+    Esta medida se puede observar con el navegador minimizandolo
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .navbar-nav {
+        background-color: #fff;
+    }
+
+    .nav-link {
+        color: #000;
+    }
+
+    .sectionOne h1 {
+        font-size: 35px;
+    }
+
+    .sectionTwo h2,
+    .sectionThree h2,
+    .sectionFour h2,
+    .sectionFive h2 {
+        font-size: 40px;
+    }
+
+    .sectionOne img {
+        width: 350px;
+        padding-top: 45px;
+        margin: 0 75px;
+        animation: foodImgRotate 50s linear infinite;
+        align-self: center;
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    .sectionTwo i {
+        background-color: #bd5d26;
+        color: #000;
+    }
+
+    .sectionTwo p {
+        text-align: justify;
+    }
+
+    .boxInformativo.estilo1 {
+        background-color: #26bd42;
+    }
+
+    .boxInformativo.estilo2 {
+        background-color: #520ad7;
+    }
+
+    .boxInformativo.estilo3 {
+        background-color: #000000;
+    }
+
+    .boxInformativo.estilo4 {
+        background-color: #bd9526;
+    }
+
+    .div-btnOrder {
+        text-align: start;
+    }
+
+    .lg-view {
+        display: none;
+    }
+
+    .sm-view {
+        display: inline-block;
+    }
+
+    .sectionFour .list-group-item i {
+        font-size: 40px;
+        color: #26bd49;
+    }
+
+    .i-price {
+        background-color: #bd5d26;
+        color: #fff;
+    }
+}
+
+/* 
+    Dispositivo = Tablets, Ipads(portrait = verticales)
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-nav {
+        background-color: #fff;
+    }
+
+    .nav-link {
+        color: #000;
+    }
+
+    .sectionOne h1,
+    .sectionTwo h2,
+    .sectionThree h2,
+    .sectionFour h2,
+    .sectionFive h2 {
+        font-size: 50px;
+    }
+
+    .sectionApp h2, p {
+        text-align: center;
+    }
+
+    .sectionOne img {
+        width: 480px;
+        margin: 0 75px;
+        padding-top: 45px;
+        animation: foodImgRotate 50s linear infinite;
+        align-self: center;
+    }
+
+    .i-price {
+        background-color: #bd5d26;
+        color: #000;
+        font-size: bolder;
+    }
+
+    .navbar-toggler i {
+        color: #bd262a;
+        font-size: 50px;
+    }
+
+    .navbar-toggler i::before {
+        color: #bd262a;
+    }
+
+    .sectionOne span {
+        color: #cae33a;
+    }
+
+    p {
+        text-align: start;
+    }
+
+
+}
+
+/* Portatil */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .sectionThree .card {
+        min-height: 518px;
+    }
+
+    .sectionFour .card {
+        min-height: 760px;
+    }
+}
